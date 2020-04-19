@@ -262,15 +262,17 @@ nav .btn {
   position: absolute;
   top: 50%;
   font-size: 80px;
-  z-index: 10;
+  z-index: 0;
   cursor: pointer;
   user-select: none;
+  color: #d2c4c4;
+
 }
 nav .prev{
-  left:300px;
+  left:209px;
 }
 nav .next {
-  right:200px;
+  right:121px;
 }
 
 nav .pagination {

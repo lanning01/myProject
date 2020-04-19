@@ -44,6 +44,8 @@ window.onload = function () {
     $('.return_top').click(function () {
         $(window).scrollTop(0);
     });
+ 
+
 
     $('.list_all_left').on('click', 'li', function () {
         var id = $(this).children('#allList').text();

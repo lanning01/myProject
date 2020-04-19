@@ -1,19 +1,16 @@
 <?php
 	include 'connectdb.php';
-	
+	//$_GET可以获得浏览器地址栏上的参数的值（?问号后面的一串字符）
 	$goodId = $_GET['goodId'];
 	$userId = $_GET['userId'];
 	$count = $_GET['count'];
 	$color = $_GET['color'];
 	$memory = $_GET['memory'];
 
-	
+	// cart表里同时满足后面四个条件的结果的个数
 	$sql = "SELECT `count` FROM `cart`
 				WHERE `userid`='$userId' AND `productid`='$goodId' AND `color`='$color' AND `memory`='$memory'";
-	
-	
 	$ret = $conn->query($sql);
-	
 	//查询的这条找count
 	$oldCount=$ret->fetch_assoc()['count'];
 	

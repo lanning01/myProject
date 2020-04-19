@@ -219,13 +219,25 @@ window.onload = function () {
 
     function memMoney() {
         var $idx;
-
+        if($('.memory .mem32 span').text()=='0'){
+                $('.memory .mem32 span').hide();
+            }
+            if($('.memory .mem64 span').text()=='0'){
+                $('.memory .mem64 span').hide();
+            }
+            if($('.memory .mem128 span').text()=='0'){
+                $('.memory .mem128 span').hide();
+            }
+            if($('.memory .mem256 span').text()=='0'){
+                $('.memory .mem256 span').hide();
+            }
         $('.memory div').click(function () {
             $idx = $(this).index();
+            console.log($('.memory .mem64 span').text());
             $('.price_before').html(parseInt(price) + 1600 * $idx);
             var nepr = parseInt(price) + 1500 * $idx;
             $('.pricenow').text(nepr);
-
+            
         })
     }
 
@@ -288,7 +300,7 @@ window.onload = function () {
     $('.return_top').click(function () {
         $(window).scrollTop(0);
     });
-    
+
      function addCart(){
     	//alert(22222)
   		$('#cart_buy').parent().click(function(){

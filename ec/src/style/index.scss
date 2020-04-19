@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 @import "common";
+/*----------------------------------qq----------------*/
+#qq{
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+}
 /*-----------------logo-search-bar-------------------*/
 #logo-search-bar {
   background: #fff;
@@ -1109,4 +1115,7 @@ search_price .enter{text-align:center;float:right; margin-top: 38px; line-height
 #kkpager .infoTextAndGoPageBtnWrap{
   padding-top:5px;
 }
-
+.list111{
+  display: inline-block;
+  margin-left: 30px;
+}

@@ -109,8 +109,8 @@
         <td>{{v.mem64}}</td>
         <td>{{v.mem128}}</td>
         <td>{{v.mem256}}</td>
-        <td><a href={{v.url}} class="u" data-id={{i}}>修改</a><br>
-            <a class="d" data-id={{v.id}}>删除</a>
+        <td><button class="u" data-id={{i}} style="background: #ccc;border:1px solid #ccc;"><a href={{v.url}}>修改</a></button><br><br>
+            <button class="d" data-id={{v.id}} style="background: red;border:1px solid red;><a href="">删除</a></button>
         </td>
 
     </tr>
@@ -138,7 +138,7 @@
             if (resp.ret) {
                 alert("删除成功");
             } else {
-                alert('出现错误')
+                alert('出现错误');
             }
         });
     });
@@ -147,7 +147,7 @@
 </script>
 <script type="text/javascript">
     $('.addPhone').click(function () {
-        window.location.href = "http://localhost/project/ec/src/html/selleradd.html";
+        window.location.href = "http://localhost:8080/project/ec/src/html/selleradd.html";
     })
 
 </script>

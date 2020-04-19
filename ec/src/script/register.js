@@ -63,8 +63,8 @@ $('button').click(function () {
         email: $('#email').val(),
         address: $('#address').val()
     }, function (resp) {
-        console.log(resp.ret);
-        if(resp.ret) {
+        console.log(resp);
+        if(resp) {
             //注册成功
             alert('注册成功,请去登录');
             location = '/project/ec/src/html/login.html';

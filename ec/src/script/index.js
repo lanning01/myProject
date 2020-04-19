@@ -1,25 +1,21 @@
-
-
-
 window.onload = function () {
-
-    function priceSearch(){
-        $('.visible').on('mouseover',function(){
+    function priceSearch() {
+        $('.visible').on('mouseover', function () {
             $('.phone_list_ul').css({
-                overflow:'visible',
+                overflow: 'visible',
 
             })
             $('.visible').css({
-                background:'white',
-                'box-shadow':' 5px 5px 5px #888888'
+                background: 'white',
+                'box-shadow': ' 5px 5px 5px #888888'
             })
-        }).on('mouseout',function(){
+        }).on('mouseout', function () {
             $('.phone_list_ul').css({
-                overflow:'hidden'
+                overflow: 'hidden'
             })
             $('.visible').css({
-                'background':'none',
-                'box-shadow':' none'
+                'background': 'none',
+                'box-shadow': ' none'
             })
         })
     };
@@ -45,19 +41,20 @@ window.onload = function () {
             }
         })
     })
-    $('.return_top').click(function(){
+    $('.return_top').click(function () {
         $(window).scrollTop(0);
     });
 
-    $('.list_all_left').on('click','li',function(){
+    $('.list_all_left').on('click', 'li', function () {
         var id = $(this).children('#allList').text();
-        window.open('./src/html/details.html?productId='+id);
+        window.open('./src/html/details.html?productId=' + id);
     });
 
-    $('.list_all_right').on('click','li',function(){
+    $('.list_all_right').on('click', 'li', function () {
         var id = $(this).children('#allRight').text();
-        window.open('./src/html/details.html?productId='+id);
+        window.open('./src/html/details.html?productId=' + id);
     });
+
     function animation(el, properties, callback) {
         clearInterval(el.phgap_id);
         el.phgap_id = setInterval(function () {
@@ -98,6 +95,7 @@ window.onload = function () {
             }
         }, 20);
     }
+
     function getStyle(el, property) {
         //该函数返回一个对象，包含了元素的所有css属性，
         // 其key为属性名，value为属性值
@@ -107,7 +105,8 @@ window.onload = function () {
             return el.currentStyle[property]
         }
     }
-    function bannerLunBo () {
+
+    function bannerLunBo() {
         let index = 0;
         let items = document.querySelectorAll('.list .item');
         let id;
@@ -260,12 +259,12 @@ window.onload = function () {
         }
 
         function slideNext() {
-            index+=3;
+            index += 3;
             slideTo(index);
         }
 
         function slidePrev() {
-            index-=3;
+            index -= 3;
             slideTo(index);
         }
 
@@ -310,25 +309,27 @@ window.onload = function () {
 
     };
     teamBuy();
-    function teamChoose(x,y){
+
+    function teamChoose(x, y) {
         $(x).hover(function () {
-            $(y).show().stop().animate({height:"173px"});
+            $(y).show().stop().animate({height: "173px"});
         }, function () {
-            $(y).stop().animate({height:"0px"});
+            $(y).stop().animate({height: "0px"});
         });
     }
-    teamChoose(".team-one",".one-black");
-    teamChoose(".team-two",".two-black");
-    teamChoose(".team-three",".three-black");
-    teamChoose(".team-four",".four-black");
-    teamChoose(".team-five",".five-black");
-    teamChoose(".team-six",".six-black");
-    teamChoose(".team-seven",".seven-black");
-    teamChoose(".team-eight",".eight-black");
-    teamChoose(".team-nine",".nine-black");
-    $('.team-buying-bottom').on('mouseover',function(){
+
+    teamChoose(".team-one", ".one-black");
+    teamChoose(".team-two", ".two-black");
+    teamChoose(".team-three", ".three-black");
+    teamChoose(".team-four", ".four-black");
+    teamChoose(".team-five", ".five-black");
+    teamChoose(".team-six", ".six-black");
+    teamChoose(".team-seven", ".seven-black");
+    teamChoose(".team-eight", ".eight-black");
+    teamChoose(".team-nine", ".nine-black");
+    $('.team-buying-bottom').on('mouseover', function () {
         $('.btn1').show();
-    }).on('mouseout',function(){
+    }).on('mouseout', function () {
         $('.btn1').hide();
     })
 }

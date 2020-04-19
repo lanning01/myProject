@@ -732,6 +732,12 @@ img {
   color: red;
   margin-left: 5px; }
 
+/*----------------------------------qq----------------*/
+#qq {
+  position: fixed;
+  bottom: 40px;
+  right: 15px; }
+
 /*-----------------logo-search-bar-------------------*/
 #logo-search-bar {
   background: #fff;
@@ -1748,5 +1754,9 @@ search_price .enter {
 
 #kkpager .infoTextAndGoPageBtnWrap {
   padding-top: 5px; }
+
+.list111 {
+  display: inline-block;
+  margin-left: 30px; }
 
 /*# sourceMappingURL=index.css.map */

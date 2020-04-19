@@ -7,7 +7,7 @@ document.querySelector('.welcome').innerHTML ="您好,&nbsp;&nbsp;&nbsp;"+user+"
 document.querySelector('.exit a').innerHTML="退出";
 $('.exit a').click(function(){
     alert('退出成功');
-    window.location.href="/project/ec/src/html/login.html";
+    window.location.href="http://localhost:8080/project/ec/src/html/login.html";
 })
 $.post('/project/ec/api/show_cart_count.php', {
 
